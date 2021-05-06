@@ -23,17 +23,19 @@
     </head>
 
     <body>
+    <div class="super_container">
+        @component('component.navbar', ['currentRoute' => $currentRoute])
+        @endcomponent
+    
+        @hasSection ('body')
+            @yield('body')
+        @endif
 
-{{--         @component('component.navbar', ['currentRoute' => $currentRoute])
-        @endcomponent --}}
+        @component('component.footer')
+        @endcomponent
+    </div>
 
 
-            @hasSection ('body')
-                @yield('body')
-            @endif
-
-{{--             @component('component.footer')
-            @endcomponent --}}
 
         <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
         <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
