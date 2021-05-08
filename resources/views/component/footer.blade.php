@@ -25,10 +25,6 @@
                                 <ul class="footer_list">
                                     <li><a href="#">Web Hosting</a></li>
                                     <li><a href="#">WordPress Hosting</a></li>
-                                    <li><a href="#">VPS Hosting</a></li>
-                                    <li><a href="#">Cloud Server</a></li>
-                                    <li><a href="#">Reseller Package</a></li>
-                                    <li><a href="#">Dedicated Hosting</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -38,37 +34,12 @@
                                 <ul class="footer_list">
                                     <li><a href="#">Buy a Domain</a></li>
                                     <li><a href="#">Premium Domain Names</a></li>
-                                    <li><a href="#">Web Hosting</a></li>
-                                    <li><a href="#">Transfer Your Domain</a></li>
-                                    <li><a href="#">Domain Marketplace</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 footer_list_col magic_fade_in">
-                            <div class="footer_list_container">
-                                <div class="footer_list_title">Resellers</div>
-                                <ul class="footer_list">
-                                    <li><a href="#">VPS Hosting</a></li>
-                                    <li><a href="#">Cloud Server</a></li>
-                                    <li><a href="#">Reseller Package</a></li>
-                                    <li><a href="#">Dedicated Hosting</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 footer_list_col magic_fade_in">
-                            <div class="footer_list_container">
-                                <div class="footer_list_title">Support</div>
-                                <ul class="footer_list">
-                                    <li><a href="#">Buy a Domain</a></li>
-                                    <li><a href="#">Premium Domain Names</a></li>
-                                    <li><a href="#">Web Hosting</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </footer>

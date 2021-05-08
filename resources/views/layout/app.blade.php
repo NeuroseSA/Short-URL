@@ -12,6 +12,7 @@
 
         <title>Up Tech - Encurtar URL</title>
 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap-4.1.2/bootstrap.min.css')}}">
         <link href="{{ asset('plugins/font-awesome-4.7.0/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="{{ asset('plugins/OwlCarousel2-2.2.1/owl.carousel.css') }}">
@@ -38,7 +39,7 @@
 
 
         <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
-        <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="{{ asset('js/api.js') }}"></script>
         <script src="{{ asset('css/bootstrap-4.1.2/popper.js') }}"></script>
         <script src="{{ asset('css/bootstrap-4.1.2/bootstrap.min.js') }}"></script>
@@ -52,6 +53,7 @@
         <script src="{{ asset('plugins/progressbar/progressbar.min.js') }}"></script>
         <script src="{{ asset('plugins/parallax-js-master/parallax.min.js') }}"></script>
         <script src="{{ asset('js/custom.js') }}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
 
         @hasSection ('javascript')
             @yield('javascript')

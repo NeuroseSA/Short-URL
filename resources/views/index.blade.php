@@ -27,16 +27,18 @@
                     <div class="row">
                         <div class="col-lg-10 offset-lg-1">
                             <div class="domain_search_form_container justify-content-center">
-                                <form {{-- action="{{ route('post.createShortUrl') }}" method="POST"  --}}id="domain_search_form"
-                                    class="domain_search_form d-flex flex-md-row flex-column align-items-center justify-content-start">
+                            <div class="col-5 alert d-none messageBox"></div>
+                            <form action="{{ route('post.createShortUrl') }}" method="POST"
+                                    class="domain_search_form d-flex flex-md-row flex-column align-items-center justify-content-start"
+                                    id="domain_search_form" name="formShortUrl">
                                     @csrf
                                     <div class="d-flex flex-row align-items-center justify-content-start">
                                         <input type="text" value="" id="url" class="domain_search_input"
                                             placeholder="Informe seu link aqui" name="url">
 
-                                        <a onclick="shortUrl();" {{-- type="submit" --}} id="enviar"
+                                        <button type="submit"
                                             class="domain_search_button d-flex flex-row align-items-center justify-content-center"><img
-                                                src="images/search.png" alt="">Encurtar</a>
+                                                src="images/search.png" alt="">Encurtar</button>
 
                                     </div>
                                 </form>

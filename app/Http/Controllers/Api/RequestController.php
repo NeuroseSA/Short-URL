@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Http;
 
 class RequestController extends Controller
 {
@@ -17,18 +16,25 @@ class RequestController extends Controller
     public function __construct()
     {
         $this->apiUrl = "https://kutt.it/api/v2";
-        $this->apikey = ['X-API-KEY: Enter_Your_Key_Here'];
+        $this->apikey = ['X-API-KEY: R~f_LzhsdaeyehqduCutSRsm0Owdh8UAECHj_l81']; 
     }
 
     public function getLinks()
     {
-
         $this->endpoint = "/links";
-        $response = Http::withHeaders($this->apikey)->get("https://kutt.it/api/v2/links");
-        return $response->json();
+        $this->build = [
+            "all" => true,
+        ];
 
+        $url = $this->apiUrl . $this->endpoint;
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_URL, $url . "?" . http_build_query($this->build));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, false);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $this->apikey);
+        $this->callback = json_decode(curl_exec($ch));
+        curl_close($ch);
+        $this->callback();
     }
-
 
     public function createShortUrl(Request $request)
     {
